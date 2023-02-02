@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <form action="">
+        <input type="number" id="first">
+        <input type="number" id="second">
+        <br>
+        <button onclick="add();" type="button">Addition(+)</button>
+        <button onclick="sub();" type="button">Subtraction(-)</button>
+        <button onclick="mul();" type="button">Multiplication(X)</button>
+        <button onclick="div();" type="button">Division(/)</button>
+        <br>
+        <p id="result"> this is the result line</p>
+        <script>
+            function add() {
+                let first = document.getElementById("first");
+                let a = parseFloat(first.value);
+                let second = document.getElementById("second");
+                let b = parseFloat(second.value);
+                let sum = a + b;
+                document.getElementById("result").innerHTML = ("Result Addition: " + sum);
+
+            }
+
+            function sub() {
+                let first = document.getElementById("first");
+                let a = parseFloat(first.value);
+                let second = document.getElementById("second");
+                let b = parseFloat(second.value);
+                let sub = a - b;
+                document.getElementById("result").innerHTML = ("Result Subtraction: " + sub);
+
+            }
+
+            function mul() {
+                let first = document.getElementById("first");
+                let a = parseFloat(first.value);
+                let second = document.getElementById("second");
+                let b = parseFloat(second.value);
+                let mul = a * b;
+                document.getElementById("result").innerHTML = ("Result Multiplication: " + mul);
+
+            }
+
+            function div() {
+                let first = document.getElementById("first");
+                let a = parseFloat(first.value);
+                let second = document.getElementById("second");
+                let b = parseFloat(second.value);
+                let div = a / b;
+                document.getElementById("result").innerHTML = ("Result Division: " + div);
+
+            }
+        </script>
+    </form>
+</body>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiển thị đầu ra</title>
+</head>
+
+<body>
+    <h1 id="mess"></h1>
+    <button type="button" onclick="showMessage1();">Click me for ex 1</button>
+    <button type="button" onclick="showMessage2();">Click me for ex 2</button>
+    <button type="button" onclick="showMessage3();">Click me for ex 3</button>
+    <button type="button" onclick="showMessage4();">Clikc me for ex 4</button>
+    <script>
+        function showMessage1() {
+            alert("Hello user");
+        }
+
+        function showMessage2() {
+            document.getElementById("mess").innerHTML = "Hello user"
+        }
+
+        function showMessage3() {
+            document.write('Hello user');
+        }
+
+        function showMessage4() {
+            console.log("Hello user");
+        }
+    </script>
+</body>
+
+</html>
